@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+    <style>
+    .button{
+  width:110px;
+  height:110px;
+  border: solid 2px grey; 
+  border-radius: 50%;
+  background:transparent;
+    }
+    .button:after{
+  content:"";
+  display:block;
+  width:100px;
+  height:100px;
+  background-color:grey;
+  border-radius:50px;
+  position:relative;
+  top:5px;
+  left:5px;
+    }
+     .abc{color:grey;
+  font-size:50px;
+  position:relative;
+  top:-90px;
+  left:150px;   
+      }
+      .container{
+        background-color:black;
+    background-repeat:no-repeat;
+    height:115px;
+    width:380px;
+      }
+      </style>
+</head>
+<body>
+      <div class="container">
+    <div class="button"></div>  
+    <div class="abc">ABC123</div>
+      </div>
+</body>
+</html>

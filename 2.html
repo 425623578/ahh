@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ghost Button</title>
+  <style>
+    .button{
+  width:130px;
+  height:130px;
+  border: solid 2px white; 
+  border-radius: 50%;
+  position:relative;
+  cursor: pointer; 
+    }
+    .button a{
+  color: white;
+  text-decoration: none;
+  text-align:center; 
+  font-size: 20px;
+  position:absolute;
+  top:40%;
+  left:10%
+    }
+    .button:hover{
+  border: solid 2px lightblue;
+    }
+    .button:hover a{
+    background: -webkit-gradient(linear, left top, right top, 
+    color-stop(0, lightblue), 
+    color-stop(.4, lightblue),
+    color-stop(.5, white), 
+    color-stop(.6, lightblue), 
+    color-stop(1, lightblue));
+    -webkit-background-clip: text;
+    color:transparent;
+    -webkit-animation: text 2s infinite;
+    }
+@keyframes text {
+  from {
+    background-position: -100px;}
+  to {
+    background-position: 100x;} 
+    }
+
+    .button:before {
+  display: block;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  content: '';
+}
+
+.button:hover:before{
+  border: dashed 3px lightblue;
+  animation: whirl 9s linear infinite;
+}
+
+@keyframes whirl{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+        body{ background: -webkit-gradient(linear, left top, left bottom, 
+    color-stop(0, white), 
+    color-stop(1, lightblue));
+    background-repeat:no-repeat;
+    background-size:500px 500px;
+    background-position:relative;
+          top:-50px;
+          left:100px;
+    }
+.button:hover{
+background-color:white;
+}
+.span:hover{color:grey;}
+  </style>
+  
+</head>
+<body>
+<div class="button" style="margin:175px 175px;">
+    <a href="http://muxistudio.com/">
+        MuxiStudio
+        <span> › </span>
+    </a>
+</div>
+</body>
+</html>
